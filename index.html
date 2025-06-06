@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Paytone+One&family=Poppins:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/sobre.css"/>
+  <link rel="stylesheet" href="styles/habilidades.css"/>
+  <link rel="stylesheet" href="styles/projetos.css"/>
+  <link rel="stylesheet" href="styles/contato.css"/>
+</head>
+<body>
+    <header class="cabeçalho">
+    <img src="img/logo.png" alt="Logo da Rony" class="header__imagem" />
+    <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+    <div class="overlay"></div>
+    <ul class="menu">
+        <li class="Nav_bar"><a href="#sobre" class="opções__link">Sobre Mim</a></li>
+        <li class="Nav_bar"><a href="#projetos" class="opções__link">Projetos</a></li>
+        <li class="Nav_bar"><a href="#contato" class="opções__link">Contato</a></li>
+    </ul>
+    </header>
+
+  <section class="apresentacao">
+    <div class="apresentacao__conteudo">
+      <div class="apresentacao__texto">
+        <h1 class="apresentacao__titulo">
+          Desenvolvedor web <br /><span class="destaque">Front-End</span>
+        </h1>
+        <p class="apresentacao__descricao">
+           Atuo na criação de aplicações web e mobile com foco em performance, usabilidade e experiência do usuário.
+        </p>
+      </div>
+      <div class="apresentacao__botoes">
+        <a href="#" class="botao">Baixar CV</a>
+      </div>
+    </div>
+    <div class="apresentacao__imagem">
+      <img src="img/foto.png" alt="Foto de perfil" class="imagem" />
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="sobre__conteudo">
+      <h2 class="sobre__titulo">Sobre Mim</h2>
+      <p class="sobre__descricao">
+        Sou desenvolvedor front-end com foco em criar interfaces modernas, acessíveis e de alta performance.
+        Tenho experiência com React, TypeScript e TailwindCSS, desenvolvendo aplicações web e mobile que realmente melhoram a experiência do usuário.
+        Já atuei em projetos de diversos segmentos, como jurídico, comercial, administrativo e tecnologia, sempre buscando alinhar design e funcionalidade aos objetivos do negócio.
+        Gosto de resolver problemas com código limpo, pensar na experiência de quem usa e aprender algo novo todos os dias.
+      </p>
+    </div>
+  </section>
+
+    <section class="habilidades-section">
+    <div class="container">
+        <h2 class="titulo titulo-habilidades">Habilidades</h2>
+        <div class="skills-grid">
+        <div class="skill html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            HTML
+        </div>
+        <div class="skill css">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            CSS
+        </div>
+        <div class="skill javascript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            JavaScript
+        </div>
+        <div class="skill react">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            React
+        </div>
+        <div class="skill bootstrap">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+            Bootstrap
+        </div>
+        <div class="skill github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            GitHub
+        </div>
+        <div class="skill figma">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+            Figma
+        </div>
+        <div class="skill tailwind">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" />
+            Tailwind
+        </div>
+        <div class="skill typescript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" />
+            Typescript
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="projetos-section" id="projetos">
+    <div class="container">
+        <h2 class="titulo titulo-projetos">Projetos</h2>
+        <div class="projetos-grid">
+        <div class="projeto-card">
+            <img src="img/projeto1.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="projeto-card">
+            <img src="img/projeto2.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="projeto-card">
+            <img src="img/projeto3.jpg" alt="Projeto 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="contato-section" id="contato">
+    <div class="container">
+        <h2 class="titulo titulo-contato">Contato</h2>
+        <div class="social-links">
+        <a href="https://github.com/seuusuario" target="_blank" class="btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 2.9 1.4 3.6 1.1.1-.8.4-1.4.8-1.7-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.4.1-2.9 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.5.2 2.6.1 2.9.8.9 1.2 2 1.2 3.3 0 4.8-2.8 5.7-5.4 6 .4.3.8 1 .8 2v3c0 .4.2.7.8.6a10.9 10.9 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/>
+            </svg>
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/devrony/" target="_blank" class="btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.55v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6H9.45V9h3.4v1.6h.1c.5-1 1.8-2 3.6-2 3.9 0 4.6 2.5 4.6 5.8v6zM5.34 7.5a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 12.95H3.56V9h3.56v11.45z"/>
+            </svg>
+            LinkedIn
+        </a>
+
+        <a href="mailto:rony224040@gmail.com" class="btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 13.1 1.5 6.75 1.5 17.25H22.5V6.75L12 13.1ZM12 10.9L22.5 4.5H1.5L12 10.9Z"/>
+            </svg>
+            Email
+        </a>
+        </div>
+    </div>
+    </section>
+
+  <script>
+    function setVh() {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+    }
+    window.addEventListener('resize', setVh);
+    setVh();
+    
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+
+    toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    overlay.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    menu.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+  </script>
+</body>
+</html>

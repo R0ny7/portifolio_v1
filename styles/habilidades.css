@@ -1,0 +1,123 @@
+.habilidades-section {
+  padding-block: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+}
+
+.titulo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 50%;
+  background-color: var(--azul);
+  border-radius: 5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background: transparent;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  color: var(--white);
+}
+
+.skill img {
+  width: 20px;
+  height: 20px;
+}
+
+.skill:hover img {
+  border-radius: 50%;
+}
+
+.skill.html:hover {
+  background-color: #e44d26;
+}
+
+.skill.css:hover {
+  background-color: #264de4;
+}
+
+.skill.javascript:hover {
+  background-color: #f0db4f;
+  color: #000;
+}
+
+.skill.react:hover {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.skill.bootstrap:hover {
+  background-color: #563d7c;
+}
+
+.skill.github:hover {
+  background-color: #333;
+}
+
+.skill.figma:hover {
+  background-color: #a259ff;
+}
+
+.skill.tailwind:hover {
+  background-color: #38bdf8;
+}
+
+.skill.typescript:hover {
+  background-color: #3178c6;
+}
+
+@media screen and (min-width: 1024px) {
+  .habilidades-section {
+    padding-block: 80px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .skill {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}

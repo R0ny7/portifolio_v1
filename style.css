@@ -1,0 +1,30 @@
+@import url("styles/header.css");
+@import url("styles/sobre.css");
+@import url("styles/apresentação.css");
+@import url("styles/habilidades.css");
+@import url("styles/projetos.css");
+@import url("styles/contato.css");
+
+:root {
+  --cor-de-fundo: #1E1E1E;
+  --white: #fff;
+  --verde: #61CE70;
+  --roxo: #BB77FF;
+  --azul: #6EC1E4;
+  --laranja: #FF6F61;
+  --vh: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: 'Poppins', sans-serif;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
